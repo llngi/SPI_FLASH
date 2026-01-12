@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=WHYH9-4890Z-DYHV3-AV2LD-35TI0-EATNB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\STMProject\SPI_FLASH\MDK-ARM\SPI_FLASH.uvprojx
+Project File Date:  01/10/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'SPI_FLASH'
+compiling main.c...
+../Core/Inc/W25Q64.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif /* __MAIN_H */
+../Core/Src/main.c(128): warning:  #870-D: invalid multibyte character sequence
+  	printf("读取flash内数�? ");
+../Core/Src/main.c(132): warning:  #870-D: invalid multibyte character sequence
+  	printf("开始写入数�? ");
+../Core/Src/main.c(140): warning:  #870-D: invalid multibyte character sequence
+  	printf("数据写入完毕读取falsh内数�? ");
+../Core/Src/main.c(152): warning:  #870-D: invalid multibyte character sequence
+      printf("该厂家W25Q64芯片ID�? 0x%04x\r\n",device_id);//读取芯片ID，应该是W25Q64的ID应该�?0xEF17
+../Core/Src/main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=8552 RO-data=312 RW-data=24 ZI-data=1224  
+FromELF: creating hex file...
+"SPI_FLASH\SPI_FLASH.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_SPI_FLASH
+  D:\Keil5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keil5\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
